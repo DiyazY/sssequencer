@@ -2,15 +2,21 @@
 
 namespace sss_second
 {
-    public class ValidationDecorator : HandlerDecoratorBase<int, int>
+    public class ValidationDecorator<TIn, TOut> : HandlerDecoratorBase<TIn, TOut>
     {
-        public ValidationDecorator(IHandler<int, int> decorated) : base(decorated)
+        //protected readonly ICommandHandler<TIn, TOut> Decorated;
+        public ValidationDecorator(ICommandHandler<TIn, TOut> decorated): base(decorated)
         {
-
+            Console.WriteLine("ValidationDecorator");
         }
-        public override int Handler(int input)
+
+        public override TOut Handle(TIn input)
         {
-            return Decorated.Handler(input);
+            //some validation logic
+
+            Console.WriteLine("Validation:)");
+
+            return Decorated.Handle(input);
         }
     }
 }

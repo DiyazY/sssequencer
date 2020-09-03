@@ -4,8 +4,8 @@ using System.Text;
 
 namespace sss_second
 {
-    public interface IHandler<in TIn, out TOut>
+    public interface ICommand<out TOut>
     {
-        TOut Handle(TIn input);
+        TOut Execute();
     }
 }

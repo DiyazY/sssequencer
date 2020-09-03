@@ -4,13 +4,23 @@ using System.Text;
 
 namespace sss_second
 {
-    public abstract class HandlerDecoratorBase<TIn, TOut> : IHandler<TIn, TOut>
+    //public abstract class HandlerDecoratorBase<TIn, TOut>
+    //{
+    //    protected readonly IHandler<TIn, TOut> Decorated;
+    //    protected HandlerDecoratorBase(IHandler<TIn, TOut> decorated)
+    //    {
+    //        Decorated = decorated;
+    //    }
+    //    public abstract TOut Handler(TIn input);
+    //}
+
+    public abstract class HandlerDecoratorBase<TIn, TOut> : ICommandHandler<TIn, TOut>
     {
-        protected readonly IHandler<TIn, TOut> Decorated;
-        public HandlerDecoratorBase(IHandler<TIn, TOut> decorated)
+        protected readonly ICommandHandler<TIn, TOut> Decorated;
+        protected HandlerDecoratorBase(ICommandHandler<TIn, TOut> decorated)
         {
             Decorated = decorated;
         }
-        public abstract TOut Handler(TIn input);
+        public abstract TOut Handle(TIn input);
     }
 }

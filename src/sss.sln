@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sss", "sss\sss.csproj", "{1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApp", "TestApp\TestApp.csproj", "{87413C4C-4C4B-4257-B120-A6FA300C1165}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sss_second", "sss_second\sss_second.csproj", "{D05207F0-A131-4C42-A3D8-5524607B092D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sss_second", "sss_second\sss_second.csproj", "{D05207F0-A131-4C42-A3D8-5524607B092D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDecoratorApproach", "TestDecoratorApproach\TestDecoratorApproach.csproj", "{92A0C5C8-C333-4937-B4F7-8268F2361E39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{D05207F0-A131-4C42-A3D8-5524607B092D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D05207F0-A131-4C42-A3D8-5524607B092D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D05207F0-A131-4C42-A3D8-5524607B092D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92A0C5C8-C333-4937-B4F7-8268F2361E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92A0C5C8-C333-4937-B4F7-8268F2361E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92A0C5C8-C333-4937-B4F7-8268F2361E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92A0C5C8-C333-4937-B4F7-8268F2361E39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -24,6 +24,7 @@ namespace sss
             return steps;
         }
 
+        //TODO : it show throw an error at compile time!!!
         public static IExecutable Finalize(this IExecutable step, Action action)
         {
             if(!(step is IFinalizeable))
