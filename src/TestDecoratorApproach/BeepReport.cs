@@ -6,7 +6,7 @@ namespace TestDecoratorApproach
 {
     public class BeepReport
     {
-        public readonly int Duration;
+        public int Duration { get; private set; }
 
         public BeepReport(int duration)
         {

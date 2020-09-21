@@ -7,11 +7,19 @@ namespace TestDecoratorApproach
 {
     public class SayBeepCommand : ICommand<Result<BeepReport, Exception>>
     {
+        private string _parameter;
+
+        private SayBeepCommand() { }
+        public SayBeepCommand(string parameter)
+        {
+            _parameter = parameter;
+        }
+
         public Result<BeepReport, Exception> Execute()
         {
             try
             {
-                Console.WriteLine("I say fucking beeep");
+                Console.WriteLine($"I say: {_parameter}");
 
                 var report = new BeepReport(DateTime.Now.Second);
 

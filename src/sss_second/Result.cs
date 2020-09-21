@@ -25,5 +25,7 @@ namespace sss_second
         {
             return _isSuccess ? success(_success) : failure(_failure);
         }
+
+        public TSuccess Value => _isSuccess ? _success : default;
     }
 }
